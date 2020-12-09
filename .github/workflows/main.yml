@@ -42,4 +42,4 @@ jobs:
         run: npm install --global surge
 
       - name: Deploy to surge
-        run: surge ./build p1jsexptracker-amemon.surge.sh --token ${{ secrets.EXP_TRACKER_P1 }}
+        run: surge ./build p1jsexptracker-amemon.surge.sh --token ${{ secrets.SURGE_TOKEN }}
