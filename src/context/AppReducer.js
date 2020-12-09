@@ -1,8 +1,8 @@
-export default (state, action) => {
+let AppReducer = (state, action) => {
     switch(action.type) {
         case 'DELETE_TRANSACTION':
             return {
-                ...state, //spread operajtor - returning the complete state
+                ...state, 
                 transactions: state.transactions.filter(transaction => transaction.id !== action.payload)
             }
         case 'ADD_TRANSACTION':
@@ -14,3 +14,5 @@ export default (state, action) => {
             return state;
     }
 }
+
+export default AppReducer;
