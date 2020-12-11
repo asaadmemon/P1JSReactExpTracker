@@ -30,6 +30,10 @@ h1 {
   align-content: center;
   text-align: center;
 }
+h1 > div {
+  font-size: 15px;
+  align-content: center;
+}
 
 h3 {
   border-bottom: 1px solid #bbb;
